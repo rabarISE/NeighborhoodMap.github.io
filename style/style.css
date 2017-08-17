@@ -1,0 +1,110 @@
+     /* Always set the map height explicitly to define the size of the div
+                 * element that contains the map. */
+                #map {
+                    
+                    width: 100%;
+                    height: 100%;
+                    
+                }
+
+
+                /* Optional: Makes the sample page fill the window. */
+                html, body {
+                    height: 100%;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .searchbar {
+
+                    position: absolute;
+                    top: 25px;
+                    left: 10px;
+                    background-color: rgba(255,255,255, 0.9);
+                    border: 1px solid gray;
+                    padding: 15px 10px;
+                }
+
+                .searchbar input {
+                    width: 175px;
+                    padding: 5px;
+                }
+
+                .resultsform #submit {
+                    background: green;
+                }
+
+                .clearbutton {
+                    cursor: pointer;
+                    text-decoration: underline;
+                    color: #2a6496;
+                }
+
+                #submit {
+                    width: 80px;
+                    padding: 7px;
+                    border: none;
+                    background: #2A6496;
+                    color: white;
+                }
+
+                select:required:invalid {
+                    color: gray;
+
+                }
+                option[value=""][disabled] {
+                    display: none;
+                }
+                option {
+                    color: black;
+                }
+                 @media screen and (max-width: 360px) {
+                   .searchbar {
+                        width: 180px;
+                        height: 70px;
+
+                    }
+                  #list {
+                      width: 90%;
+                      margin-top: 0px;
+                      position: absolute;
+                      bottom: 27px;
+                  }
+                  #serch {
+                      width: 62%;
+
+                  }
+                   #submit {
+                         width: 27%;
+                    }
+                  input[type=text]
+                  {
+                      font-weight: bold;
+                  }
+
+                }
+                @media screen and (max-width: 768px) and (min-width: 361px) {
+                    .searchbar {
+                        width: 340px;
+                        height: 130px;
+                    }
+                    #list {
+                        width: 100%;
+                        height: 30%;
+                    }
+                    #serch {
+                        width: 68%;
+                    }
+                    #submit {
+                         width: 25%;
+                         height: 35px;
+                    }
+                    #clear {
+                        font-size: 20px;
+                    }
+                    input[type=text]
+                  {
+                      font-size: 18px;
+                  }
+
+                }
